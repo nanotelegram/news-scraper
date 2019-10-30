@@ -1,10 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
 const app = express();
 
-
+// require mongo db connection module to connect to database
+const mongodbConnection = require('./config/db_connect');
 
 // express makes public folder content publicly accessible
 app.use(express.static('public'));

@@ -20,5 +20,14 @@ This application scrapes article from a third-party website, saves articles, sav
 
 
 ## Pseudo Code 
-    scape button - scrapes articles from a thirparty website 
-    save  
+SCRAPE BUTTON scrapes articles from a third party website 
+    each article will have a SAVE BUTTON 
+    when the SAVED BUTTON clicked, the article is stored in the "SAVED ARTICLES PAGE" 
+        1. this article will have a NOTE BUTTON 
+            a. notes can be saved 
+            b. notes can deleted 
+        2. this aritlce will have a DELETE BUTTON
+
+ 
+
+  
