@@ -1,5 +1,5 @@
 ## news-scraper
-This application scrapes news from a third-party website
+This application scrapes article from a third-party website, saves articles, saves comments to the aticles, remove comments from the articles and remove the saved aticles. 
 
 
 
@@ -17,3 +17,8 @@ This application scrapes news from a third-party website
 ## Examples 
 * Example 1: 
 ![Example-1](/example-img/example-img-1.png)
+
+
+## Pseudo Code 
+    scape button - scrapes articles from a thirparty website 
+    save  
