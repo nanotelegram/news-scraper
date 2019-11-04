@@ -8,7 +8,7 @@ const mongoDBconnection = mongoose.connect("mongodb://localhost/news", {
   });
 
   // display a message if the mongodb connection is succesful 
-  console.log(" + Mongo DB Connection Successful...(ref: db_connect.js");
-  console.log(" + Mongo DB Module Imported Successfully");
+  console.log(" + Mongo DB connected successfully => ref: db_connect.js");
+  console.log(" + Mongo DB Module imported successfully");
   module.exports = mongoDBconnection;
 
