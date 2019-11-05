@@ -10,33 +10,29 @@ module.exports = app => {
     axios.get("https://hackernoon.com/tagged/coding").then(function(response) {
       // handle success
       const $ = cheerio.load(response.data);
+      
+      // grab all a element with the container
+      const targetCon = $(".more-content .title");
+      targetCon.each((i, el) => {
+        // $(element) is refering to targetCon,
+        let aTitle = $(el)
+          .children("a")
+          .text();
+        let aHref = $(el)
+          .children("a")
+          .attr("href");
+        // console.log(aTitle);
+        // console.log(`${aHref}\n`);
 
-      const divMoreContent = $(".more-content");
-      // we need the divMoreContent length to loop thru all its content dynamically
-      for (let i = 0; i < divMoreContent.length; i++) {
-        // target all the links inside the .more-content
-        const link = $(".more-content a");
-
-        // store the link href
-        const linkHref = link.attr("href");
-        console.log(linkHref);
-        // store the link text
-        const linkTitle = link.html();
-        console.log(linkTitle);
-
-        // const linkText = link.text();
-        // console.log(linkText);
-
+        // create a new object and bind it to the model 
         const result = {};
+        result.title = aTitle;
+        result.link = aHref;
 
-        result.title = linkTitle;
-        result.link = linkHref;
-
-        db.create(result).then(dbArticle =>{
-        console.log(dbArticle);
+        db.create(result).then(dbArticle => {
+          console.log(dbArticle);
         });
-
-      }
+      });
     });
 
     // Send a message to the client // test if the api route is woking by sending a message to the client
