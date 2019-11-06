@@ -1,8 +1,6 @@
 // global variables 
 var conContent = document.querySelector('.con-content');
 
-
-
 // this functions fetches articles from articles route
 const fetchArticles = () => {
   fetch('/articles').then(function (response) {

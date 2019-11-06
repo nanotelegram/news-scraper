@@ -18,7 +18,7 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 .con-nav a {
     text-decoration: none;
