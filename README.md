@@ -1,4 +1,4 @@
-## news-scraper
+# news-scraper
 This application scrapes article from a third-party website, saves articles, saves comments to the aticles, remove comments from the articles and remove the saved aticles. 
 
 
@@ -11,22 +11,16 @@ This application scrapes article from a third-party website, saves articles, sav
 5. npm i cheerio  => install [cheerio package](https://www.npmjs.com/package/cheerio)
 5. npm i mongoose  => install [mongoose package](https://www.npmjs.com/package/mongoose)
 
-
-
+## Technolgies Used 
+* Server: Node.js
+* Database: MongoDB
 
 ## Examples 
 * Example 1: 
 ![Example-1](/public/img/example-1.png)
 
 
-## Pseudo Code 
-SCRAPE BUTTON scrapes articles from a third party website 
-    each article will have a SAVE BUTTON 
-    when the SAVED BUTTON clicked, the article is stored in the "SAVED ARTICLES PAGE" 
-        1. this article will have a NOTE BUTTON 
-            a. notes can be saved 
-            b. notes can deleted 
-        2. this aritlce will have a DELETE BUTTON
+
 
  
 
