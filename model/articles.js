@@ -23,10 +23,13 @@ var ArticleSchema = new Schema({
 });
 
 // This creates our model from the above schema, // Syntax mongoose.model("collectionName", ArticleSchema);
-var Article = mongoose.model("myArticles", ArticleSchema);
+var Article = mongoose.model("articles", ArticleSchema);
 
 // Export the Article model
+
 module.exports = Article;
 
+// IMPORTANT 
+// if you dont { "Article": Article};, your route http://localhost:5050/articles will produce "find undefined"
 console.log(" + article model connected successfully => ref: articles.js");
 
