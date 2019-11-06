@@ -35,3 +35,34 @@ body {
     border: 1px solid tomato;
 }
 
+.con-content {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.con-news-card {
+    border: 1px solid grey;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.con-news-card:hover {
+    background-color: #ffffff;
+    border: 1px solid green;
+}
+
+.con-news-card a {
+    text-decoration: none;
+    padding: 0px 10px;
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 0px 5px;
+}
+.con-news-card .save {
+    background-color: green;
+}
