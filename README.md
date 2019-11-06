@@ -16,7 +16,7 @@ This application scrapes article from a third-party website, saves articles, sav
 
 ## Examples 
 * Example 1: 
-![Example-1](/img/example-1.png)
+![Example-1](/public/img/example-1.png)
 
 
 ## Pseudo Code 
