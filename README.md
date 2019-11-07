@@ -1,5 +1,5 @@
 # news-scraper
-This application scrapes article from a third-party website, saves articles, saves comments to the aticles, remove comments from the articles and remove the saved aticles. 
+This application scrapes article from a third-party website, saves articles, saves comments to the aticles, removes comments from the articles and removes the saved aticles. 
 
 
 
@@ -12,6 +12,9 @@ This application scrapes article from a third-party website, saves articles, sav
 5. npm i mongoose  => install [mongoose package](https://www.npmjs.com/package/mongoose)
 
 ## Technolgies Used 
+* HTML 5
+* CSS Grid 
+* Vannila JavaScript
 * Server: Node.js
 * Database: MongoDB
 
