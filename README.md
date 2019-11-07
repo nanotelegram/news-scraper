@@ -19,7 +19,7 @@ This application scrapes article from a third-party website, saves articles, sav
 * Database: MongoDB
 
 ## Examples 
-* Example 0 - Scraping News From The Hackernoon Website: 
+* Example 0 - Scraping News From [The Hackernoon Website: ](https://www.npmjs.com/package/express)
 ![Example-1](/public/img/example-0.png)
 * Example 1 - After Scraping: 
 ![Example-1](/public/img/example-1.png)
