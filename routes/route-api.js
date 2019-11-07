@@ -27,7 +27,8 @@ module.exports = app => {
         // create a new object and bind it to the model
         const result = {};
         result.title = aTitle;
-        result.link = aHref;
+        result.link = aHref
+        result.saved = false;
 
         // Create a new article using the `result` object built from scraping
         db.create(result).then(dbArticle => {
@@ -53,7 +54,24 @@ module.exports = app => {
         res.json(err);
       });
   });
+
+  // Route for saving Articles to a new db
+  app.get("/saved", (req, res) => {
+    // Grab every document in the Articles collection
+    db.find({}) // IMPORTANT db.find() find all collection in the articles database 
+      .then(function(dbArticle) {
+        // If we were able to successfully find Articles, send them back to the client
+        res.json(dbArticle);
+      })
+      .catch(function(err) {
+        // If an error occurred, send it to the client
+        res.json(err);
+      });
+  });
 };
+
+
+
 
 // Api route module message
 console.log(` + API Route Module connected successfully => ref: route-api.js`);

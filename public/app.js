@@ -19,9 +19,9 @@ const fetchArticles = () => {
       let newsCardCon = document.createElement('section');
       newsCardCon.setAttribute('class', 'con-news-card');
 
-      let h3Title = document.createElement('h3');
-      h3Title.setAttribute('class', 'title');
-      h3Title.textContent = title;
+      let newsTitle = document.createElement('h3');
+      newsTitle.setAttribute('class', 'title');
+      newsTitle.textContent = title;
 
       let linkBtn = document.createElement('a');
       linkBtn.setAttribute('href', `https://hackernoon.com${link}`);
@@ -35,7 +35,7 @@ const fetchArticles = () => {
       saveBtn.textContent = `Save`;
 
 
-      newsCardCon.append(h3Title);
+      newsCardCon.append(newsTitle);
       newsCardCon.append(linkBtn);
       newsCardCon.append(saveBtn);
 
@@ -51,6 +51,7 @@ const fetchArticles = () => {
 // fetch articles when homepage is finished loading
 window.onload = fetchArticles;
 
+// Save button - save news to the saved collection and post on the saved.html pages 
 
 
 
